@@ -218,12 +218,12 @@ public class DeviceControlActivity extends Activity implements OnClickListener{
 				Log.d(TAG, "BluetoothLeService connect");
 				mIsConnected = true;
 				updateConnectionState(R.string.connected);
-				mTvConnect.setText(R.string.disconnected);
+				mTvConnect.setText(R.string.todisconnect);
 			} else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
 				Log.d(TAG, "BluetoothLeService disconnected");
 				mIsConnected = false;
 				updateConnectionState(R.string.disconnected);
-				mTvConnect.setText(R.string.connected);
+				mTvConnect.setText(R.string.toconnect);
 				clearUI();
 			} else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
 				// Show all the supported services and characteristics on the user interface.

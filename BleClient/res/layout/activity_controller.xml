@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="20dp"
-            android:text="@string/connected"
+            android:text="@string/toconnect"
             android:textColor="@color/top_text_color"
             android:textSize="22sp" />
     </LinearLayout>
